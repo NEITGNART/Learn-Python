@@ -42,6 +42,8 @@ def solve():
 
     if (grid[0][0] == 1):
         Try(0, 0, '')
+        for x in res:
+            print(x)
     else:
         print("No solution")
 
