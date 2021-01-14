@@ -19,6 +19,10 @@ def solve():
     # 0 1 1 1 1
     # 0 0 0 1 1
 
+
+    # Start from the most left corner and destination is the most right down corner
+    # Because each step robot move down or right. Thus as it can't collision, doesn't need a list bool
+
     res = []
 
 
