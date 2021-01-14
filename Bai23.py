@@ -37,22 +37,22 @@ def solve():
            res.append(s)
            s = '' # clear string s
 
-        if (0 < i + 1 < n and ok[i + 1][j] == False and grid[i+1][j] == 1):
+        if (i + 1 < n and ok[i + 1][j] == False and grid[i+1][j] == 1):
             ok[i+1][j] = True
             Try(i + 1, j, s + "D")
             ok[i+1][j] = False
 
-        if (0 < j + 1 < n and ok[i][j+1] == False and grid[i][j + 1] == 1):
+        if (j + 1 < n and ok[i][j+1] == False and grid[i][j + 1] == 1):
             ok[i][j+1] = True
             Try(i, j + 1, s + "R")
             ok[i][j+1] = False
 
-        if (0 <= j - 1 < n and ok[i][j-1] == False and grid[i][j-1] == 1):
+        if (0 <= j - 1  and ok[i][j-1] == False and grid[i][j-1] == 1):
             ok[i][j-1] = True
             Try(i, j-1, s + "L")
             ok[i][j-1] = False
 
-        if (0 <= i - 1 < n and ok[i-1][j] == False and grid[i - 1][j] == 1):
+        if (0 <= i - 1 and ok[i-1][j] == False and grid[i - 1][j] == 1):
             ok[i-1][j] = True
             Try(i-1, j, s + "U")
             ok[i-1][j] = False
@@ -65,9 +65,7 @@ def solve():
             print(x)
     else:
         print("No solution")
-
-
-
+        
 
 def main():
     solve()
