@@ -1,4 +1,4 @@
-{
+
 #include <iostream>
 #include <functional>
 
@@ -37,8 +37,7 @@ void Try(int i) {
 
 }
 
-}
-{
+
 int main(void) {
 
     n = 10;
@@ -47,7 +46,7 @@ int main(void) {
     cout << cnt << endl;
     return 0;
 }
-}
+
 
 
             1 số lưu ý về hàm backtrack rút ra trong việc code
