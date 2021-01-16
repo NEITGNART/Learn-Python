@@ -74,7 +74,7 @@ int main(void) {
             không gian n ^ n lớn hơn rất nhiều so với không gian n!
             NOTE: khi làm giai thừa cần dùng thêm 1 mảng bool để check condition
 
-            với cách tính subset thì phải đi từ x[i-1] -> n - k + i ( Hiện tại thì trình mình chưa đủ để hình dung)
+            với cách tính subset thì phải đi từ x[i-1] -> n - k + i và gán x[i] = j ( Hiện tại thì trình mình chưa đủ để hình dung)
             hy vọng sẽ quay trở lại để hoành thành đoạn note
 
 
