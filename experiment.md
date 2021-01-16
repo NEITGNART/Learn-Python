@@ -1,3 +1,4 @@
+{
 #include <iostream>
 #include <functional>
 
@@ -36,7 +37,18 @@ void Try(int i) {
 
 }
 
-/*
+}
+{
+int main(void) {
+
+    n = 10;
+    Try(1);
+    
+    cout << cnt << endl;
+    return 0;
+}
+}
+
 
             1 số lưu ý về hàm backtrack rút ra trong việc code
             có 2 cách đặt if (đặt đầu hoặc đặt cuối). Ví dụ như cách đặt  
@@ -67,14 +79,5 @@ void Try(int i) {
             hy vọng sẽ quay trở lại để hoành thành đoạn note
 
 
-}
 
-*/
-int main(void) {
 
-    n = 10;
-    Try(1);
-    
-    cout << cnt << endl;
-    return 0;
-}
