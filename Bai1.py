@@ -18,7 +18,7 @@ def solve():
 
         for j in range(n):
             print(bistring[j], end = '')
-
+    # other solution, just convert to binary to int, then + 1 and print
 
 def main():
     solve()
