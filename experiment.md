@@ -63,7 +63,7 @@ int main(void) {
             nên mặc định chọn cách 2 và khi làm backtracking nên lấy chỉ số index  = 1 trong mọi tình huống
             còn không thì rất nên cẩn thận vì có thể bị stackoverflow bất cứ lúc nào
 
-            NOTE: nếu khi dùng if loại 1 thì trong hàm (i == n) phải tăng thành n + 1
+            NOTE: nếu khi dùng if loại 1 thì trong hàm (i == n) phải tăng thành n + 1 Với (i == n + 1) như này
             còn if loại 2 thì không
             NOTE: nếu khi dùng if loại 2 thì khi gọi hàm Try(i + 1) phải đi kèm với else với if ở trên
             bởi vì if else đó được dùng làm điều kiện dừng luôn (backtracking là đệ quy nhiều for nên phải có đk dừng)
