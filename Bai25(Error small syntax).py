@@ -1,4 +1,4 @@
-
+import sys
 def solve(a : list, n : int, k : int):
 
     sum_ = sum(a)
@@ -7,14 +7,15 @@ def solve(a : list, n : int, k : int):
         return False
 
     visited = [False] * (n + 5)
+    ok = False
+    temp = False
+    def Try(s : list, i : int, ok : bool):
 
-    def Try(s, i, ok):
+        #in pratice, remember that utilize the ok variable to optimize the time complexity (Prune)  if ok == True return
 
-        if (ok == True):
-            return
         if i == k:
-            ok = True
-            print("Has solution")
+            print("Had found solution")
+            sys.exit()
             return
         for j in range(n):
             if visited[j] is False:
@@ -27,8 +28,8 @@ def solve(a : list, n : int, k : int):
                     Try(s + a[j], i, ok)
             visited[j] = False
 
-    ok = False
-    Try(0, 0, ok)
+    temp = False
+    Try(0, 0, temp)
     return ok
 
 def main():
